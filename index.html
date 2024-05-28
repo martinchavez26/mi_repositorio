@@ -4,31 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pagina web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header id="header">
-        <nav id="nav">
-                <div>
-                    <a href="index.html">
-                        <button id="logodeboca">
-                            <img src="./assetes/image/logo-boca.png" alt="">
-                        </button>
-                    </a>
-                </div>
-                <ul>
-                    <li><a href="./paginasEmergentes/futbol.html">futbol</a></li>
-                    <li><a href="./paginasEmergentes/basquet.html">basquet</a></li>
-                    <li><a href="./paginasEmergentes/entrenamiento.html">entrenamiento</a></li>
-                    <li><a href="./paginasEmergentes/novedades.html">novedades</a></li>
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+            <a class="navbar-brand" href="index.html">
+                <button id="logodeboca">
+                    <img src="./assetes/image/logo-boca.png" alt="">
+                </button>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                <a class="nav-link" href="./paginasEmergentes/futbol.html"><p>Futbol</p><span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./paginasEmergentes/basquet.html"><p>Basquet</p></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./paginasEmergentes/entrenamiento.html"><p>Entrenamiento</p></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link disabled" href="./paginasEmergentes/novedades.html" tabindex="-1" aria-disabled="true"><p>Novedades</p></a>
+                </li>
+            </ul>
+            </div>
         </nav>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </header>
     
     <main id="main">
         <article>
             <a href="./paginasEmergentes/novedades.html" target="_blank">
-                <img src="./assetes/image/imagen-Article.png" alt="" id="imagenArticle">
+                <img src="./assetes/image/imagen-Article.png" alt="" class="imagenesArticulo">
             </a>
         </article>
 
@@ -41,28 +56,24 @@
                         <li><p>Hombre</p></li>
                         <li><p>Tercera Camiseta Autenthic Boca 2024</p></li>
                         <li><p>$ 124.999</p></li>
-                        <li><img src="./assetes/image/Boton-Comprar.jpg" alt="" class="botonComprar"></li>
                     </ul>
                     <ul class="productosNovedades">
                         <li><img src="./assetes/image/Futbol-Ropa/Short Tercer Uniforme Boca 2024.jpg" alt="" class="imagenesProductos"></li>
                         <li><p>Unisex</p></li>
                         <li><p>Short Tercer Uniforme Boca 2024</p></li>
                         <li><p>$ 49.999</p></li>
-                        <li><img src="./assetes/image/Boton-Comprar.jpg" alt="" class="botonComprar"></li>
                     </ul>
                     <ul class="productosNovedades">
                         <li><img src="./assetes/image/Novedades-Ropa/Campera Tiro Boca Jrs 23-24.png" alt="" class="imagenesProductos"></li>
                         <li><p>Hombre</p></li>
                         <li><p>Campera Tiro Boca Jrs 2024</p></li>
                         <li><p>$ 144.999</p></li>
-                        <li><img src="./assetes/image/Boton-Comprar.jpg" alt="" class="botonComprar"></li>
                     </ul>
                     <ul class="productosNovedades">
                         <li><img src="./assetes/image/Novedades-Ropa/Medias Tercer Uniforme Boca 2024.jpg" alt="" class="imagenesProductos"></li>
                         <li><p>Hombre</p></li>
                         <li><p>Medias Tercer Uniforme Boca 2024</p></li>
                         <li><p>$ 11.999</p></li>
-                        <li><img src="./assetes/image/Boton-Comprar.jpg" alt="" class="botonComprar"></li>
                     </ul>
             </div>
         </section>
@@ -104,6 +115,6 @@
             </a>
         </div>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

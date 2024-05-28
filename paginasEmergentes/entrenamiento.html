@@ -8,21 +8,35 @@
 </head>
 <body>
     <header id="header">
-        <nav id="nav">
-                <div>
-                    <a href="./../index.html">
-                        <button id="logodeboca">
-                            <img src="./../assetes/image/logo-boca.png" alt="">
-                        </button>
-                    </a>
-                </div>
-                <ul>
-                    <li><a href="./futbol.html">futbol</a></li>
-                    <li><a href="./basquet.html">basquet</a></li>
-                    <li><a href="./entrenamiento.html">entrenamiento</a></li>
-                    <li><a href="./novedades.html">novedades</a></li>
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+            <a class="navbar-brand" href="index.html">
+                <button id="logodeboca">
+                    <img src="./../assetes/image/logo-boca.png" alt="">
+                </button>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                <a class="nav-link" href="./futbol.html"><p>Futbol</p><span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./basquet.html"><p>Basquet</p></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./entrenamiento.html"><p>Entrenamiento</p></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link disabled" href="./novedades.html" tabindex="-1" aria-disabled="true"><p>Novedades</p></a>
+                </li>
+            </ul>
+            </div>
         </nav>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </header>
     <main id="main">
         <article>
@@ -37,33 +51,28 @@
                         <li><p>Hombre</p></li>
                         <li><p>Camiseta Entrenamiento Celesta Boca Jrs 23/24</p></li>
                         <li><p>$ 54.999</p></li>
-                        <li><img src="./../assetes/image/Boton-Comprar.jpg" alt="" class="botonComprar"></li>
                     </ul>
                     <ul class="productosNovedades">
                         <li><img src="./../assetes/image/Entrenamiento-Ropa/Campera Tiro Boca Jrs.png" alt="" class="imagenesProductos"></li>
                         <li><p>Hombre</p></li>
                         <li><p>Campera Tiro Boca Jrs 23/24</p></li>
                         <li><p>$ 149.999</p></li>
-                        <li><img src="./../assetes/image/Boton-Comprar.jpg"alt="" class="botonComprar"></li>
                     </ul>
                     <ul class="productosNovedades">
                         <li><img src="./../assetes/image/Entrenamiento-Ropa/Pantalon Tira Boca Jrs 23-24.png" alt="" class="imagenesProductos"></li>
                         <li><p>Hombre</p></li>
                         <li><p>Pantalon Tira Boca Jrs 23/24</p></li>
                         <li><p>$ 84.999</p></li>
-                        <li><img src="./../assetes/image/Boton-Comprar.jpg" alt="" class="botonComprar"></li>
                     </ul>
                     <ul class="productosNovedades">
                         <li><img src="./../assetes/image/Entrenamiento-Ropa/Top Entrenamiento Tiro Boca Jrs 23-24.png" alt="" class="imagenesProductos"></li>
                         <li><p>Mujer</p></li>
                         <li><p>Top Entrenamiento Tiro Boca Jrs 23/24</p></li>
                         <li><p>$ 99.999</p></li>
-                        <li><img src="./../assetes/image/Boton-Comprar.jpg" alt="" class="botonComprar"></li>
                     </ul>
             </div>
         </section>
-    </main>
-    
+    </main>    
     <footer>
         <div id="textodelfooter">
             <ul id="redessociales">

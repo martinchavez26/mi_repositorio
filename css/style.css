@@ -1,5 +1,178 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
+@media (max-width: 768px){
+    *{
+        margin:0;
+        padding: 0;
+        font-family: "nunitio", sans-serif;
+        font-size: 20px;
+    }
+    body{
+        background-image: url(./../assetes/image/fondos/fondodelmain.jpg);
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 1fr 15%;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+    body button{
+        background-color: rgba(240, 248, 255, 0);
+        border: 0px;
+        cursor: pointer;
+    }
+    
+    body a{
+        text-decoration: none;
+    }
+    header{
+        grid-area: header;
+    }
+    nav{
+        background-image: url(./.././assetes/image/fondos/fondo-abstracto-textura.jpg);
+        width: 99%;
+        height: 90px;
+        margin: 0px 2px 3px 2px;
+    }
+
+    #logodeboca{
+        position: absolute;
+        top: 10px;
+        left: 14px;
+        width: 129px;
+        height: 70px; 
+    }
+    .navbar-nav .nav-link {
+        color: white !important;
+    }
+
+    .navbar-brand {
+        color: white !important;
+    }
+
+    .navbar-collapse {
+        background-image: url(./.././assetes/image/fondos/fondo-abstracto-textura.jpg);
+        padding: 1rem;
+    }
+    
+    main{
+        grid-area: main;
+        background-color: aliceblue;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+    main h1, main p{
+        background-color: aliceblue;
+        padding-top: 25px;
+    }
+
+    .imagenesArticulo{
+        width: 100%;
+        height: 100%;
+    }
+
+    section{
+    color: rgb(0, 0, 0);
+    padding: 5px 5px 5px 5px;
+    }
+
+    section h6{
+    border-top: 2px solid  rgb(7, 27, 92);
+    }
+    section div {
+        margin: 5px 5px 0px 5px;
+        display: flex;
+        flex-flow: column;
+        align-items: stretch;
+        
+    }
+    .productosNovedosos{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        grid-template-areas: "imagen informacion";
+    }
+    section ul{
+        display: flex;
+        flex-flow: row;
+        list-style: none;
+        width: 100%;
+        height: 100%;
+        border: 2px solid rgb(7, 27, 92);
+    }
+    
+    section ul li{
+        align-items: center;
+        width: 100%; 
+        height: 100%;
+    }
+    
+    section ul li p{
+        grid-area: informacion;
+        text-align: start;
+        width: 100%;
+        height: 100%;
+        padding: 0px 2px 0px 2px;
+    }
+
+    .imagenesProductos{
+        grid-area: imagen;
+        width: 100%;
+        height: 100%;
+    }
+
+    footer{
+        grid-area: footer;
+        background-image: url(./../assetes/image/fondos/fondo-abstracto-textura.jpg);
+        position: relative;
+        align-items: stretch;
+    }
+    
+    footer h6{
+        color: rgb(235, 255, 125);
+    }
+    
+    footer div ul li p,footer div ul li a{
+        font-size: 15px;
+        color: aliceblue;
+    }
+    
+    #textodelfooter{
+        list-style: none;
+        align-items: start;
+    }
+    
+    #redessociales{
+        list-style: none;
+        text-align: start;
+        font: 200px;
+        padding-top: 20px;
+    }   
+    
+    #contacto{
+        list-style: none;
+        font: 250px;
+        text-align: start;
+    }
+    
+    #finaldelfooter{
+        color: aliceblue;
+        position: relative;
+        font-size: 11px;
+        text-align: center; 
+    
+    }
+    
+    #botondelfooter{
+        position: relative;
+        width: 10px;
+        padding-left: 45%;
+    }
+    
+}
+
+@media (min-width:768px){
+
 *{
     margin:0;
     padding: 0;
@@ -9,7 +182,14 @@
 
 body{
     background-image: url(./../assetes/image/fondos/fondodelmain.jpg);
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 1fr 15%;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
 }
+
 body button{
     background-color: rgba(240, 248, 255, 0);
     border: 0px;
@@ -19,16 +199,14 @@ body button{
 body a{
     text-decoration: none;
 }
-
+header{
+    grid-area: header;
+}
 nav{
     background-image: url(./.././assetes/image/fondos/fondo-abstracto-textura.jpg);
     width: 99%;
     height: 90px;
     margin: 0px 2px 3px 2px;
-    display: flex;
-    justify-content: space-between;
-    align-items:center ;
-    position: fixed;
 }
 
 #logodeboca{
@@ -38,43 +216,29 @@ nav{
     width: 129px;
     height: 70px; 
 }
-
-#nav ul{
-    list-style: none;
-    display: flex;
-    
+.navbar-nav .nav-link {
+    color: white !important;
 }
 
-#nav ul li{
-    font-style: none;
-    display: inline-block;
-    padding:10px;
-    margin-top: 50px;
+.navbar-brand {
+    color: white !important;
 }
 
-
-#nav ul li a{
-    font-size: 60%;
-    color:rgb(255, 255, 255);
-    
+.navbar-collapse {
+    background-image: url(./.././assetes/image/fondos/fondo-abstracto-textura.jpg);
+    padding: 1rem;
 }
 
 main{
+    grid-area: main;
     background-color: aliceblue;
-    padding: 60px 0px 20px 0px;
-    position: static;
-    margin: 20px 10px 20px 10px;
-    
+    width: 100%;
+    height: 100%;
+    padding: 10px;
 }
-
 main h1, main p{
     background-color: aliceblue;
-    padding: 15px;
-    margin-top: 25px;
-}
-
-article{
-    margin: 40px 5px 0px 5px;
+    padding-top: 25px;
 }
 
 .imagenesArticulo{
@@ -83,13 +247,12 @@ article{
 }
 
 section{
-    color: rgb(0, 0, 0);
-    padding: 5px 5px 5px 5px;
-    
+color: rgb(0, 0, 0);
+padding: 5px 5px 5px 5px;
 }
 
 section h6{
-    border-top: 2px solid  rgb(7, 27, 92);
+border-top: 2px solid  rgb(7, 27, 92);
 }
 
 section div {
@@ -105,15 +268,15 @@ section ul{
     flex-flow: column;
     list-style: none;
     margin: 20px 5px 0px 5px;
-    width: 20%;
-    height: 20%;
+    width: 23%;
+    height: 100%;
     border: 2px solid rgb(7, 27, 92);
     
 }
 
 section ul li{
     align-items: center;
-    width: 24%; 
+    width: 100%; 
     height: 100%;
 }
 
@@ -124,21 +287,12 @@ section ul li p{
 }
 
 .imagenesProductos{
-    width: 405%;
-    height: 405%;
-}
-
-.botonComprar{
-    width: 400%;
-    height: 200%;
-}
-
-#imagenArticle{
-    height: 100%;
     width: 100%;
+    height: 100%;
 }
 
 footer{
+    grid-area: footer;
     background-image: url(./../assetes/image/fondos/fondo-abstracto-textura.jpg);
     position: relative;
     display: flex;
@@ -189,4 +343,4 @@ footer div ul li p,footer div ul li a{
     width: 10px;
     padding-left: 50%;
 }
-
+}
