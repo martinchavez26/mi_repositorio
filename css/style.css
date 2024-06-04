@@ -83,7 +83,7 @@
     padding: 5px 5px 5px 5px;
     }
 
-    section h6{
+    section h1{
     border-top: 2px solid  rgb(7, 27, 92);
     }
     section div {
@@ -211,12 +211,6 @@ header{
 #navMobile{
     display: none;
 }
-nav{
-    background-image: url(./.././assetes/image/fondos/fondo-abstracto-textura.jpg);
-    width: 99%;
-    height: 90px;
-    margin: 0px 2px 3px 2px;
-}
 
 #logodeboca{
     position: absolute;
@@ -283,8 +277,11 @@ color: rgb(0, 0, 0);
 padding: 5px 5px 5px 5px;
 }
 
-section h6{
-border-top: 2px solid  rgb(7, 27, 92);
+section h1{
+    border-top: 2px solid  rgb(7, 27, 92);
+}
+section h1, section h2{
+    font-size: 30px;
 }
 
 section div {
@@ -332,7 +329,7 @@ footer{
     align-items: stretch;
 }
 
-footer h6{
+footer h6,footer h5{
     color: rgb(235, 255, 125);
 }
 
