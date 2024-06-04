@@ -28,7 +28,10 @@
     header{
         grid-area: header;
     }
-    nav{
+    #navDestok{
+        display: none;
+    }
+    #navMobile{
         background-image: url(./.././assetes/image/fondos/fondo-abstracto-textura.jpg);
         width: 99%;
         height: 90px;
@@ -53,6 +56,9 @@
     .navbar-collapse {
         background-image: url(./.././assetes/image/fondos/fondo-abstracto-textura.jpg);
         padding: 1rem;
+    }
+    #navMobile ul li{
+        text-align: right;
     }
     
     main{
@@ -202,6 +208,9 @@ body a{
 header{
     grid-area: header;
 }
+#navMobile{
+    display: none;
+}
 nav{
     background-image: url(./.././assetes/image/fondos/fondo-abstracto-textura.jpg);
     width: 99%;
@@ -216,29 +225,52 @@ nav{
     width: 129px;
     height: 70px; 
 }
-.navbar-nav .nav-link {
-    color: white !important;
-}
 
-.navbar-brand {
-    color: white !important;
-}
-
-.navbar-collapse {
+nav{
     background-image: url(./.././assetes/image/fondos/fondo-abstracto-textura.jpg);
-    padding: 1rem;
+    width: 100%;
+    height: 90px;
+    margin: 0px 2px 3px 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    position: fixed;
 }
+
+
+#navDestok ul{
+    list-style: none;
+    display: flex;
+
+}
+
+#navDestok ul li{
+    font-style: none;
+    display: inline-block;
+    padding:10px;
+    margin-top: 50px;
+}
+
+
+#navDestok ul li a{
+    color:rgb(255, 255, 255);
+}
+
 
 main{
-    grid-area: main;
     background-color: aliceblue;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
+    padding: 60px 0px 20px 0px;
+    position: static;
+    margin: 20px 10px 20px 10px;
+
 }
 main h1, main p{
     background-color: aliceblue;
     padding-top: 25px;
+}
+
+article{
+    margin: 40px 5px 0px 5px;
 }
 
 .imagenesArticulo{
@@ -344,3 +376,20 @@ footer div ul li p,footer div ul li a{
     padding-left: 50%;
 }
 }
+/*
+<nav id="nav">
+                <div>
+                    <a href="index.html">
+                        <button id="logodeboca">
+                            <img src="./assetes/image/logo-boca.png" alt="">
+                        </button>
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="./paginasEmergentes/futbol.html">futbol</a></li>
+                    <li><a href="./paginasEmergentes/basquet.html">basquet</a></li>
+                    <li><a href="./paginasEmergentes/entrenamiento.html">entrenamiento</a></li>
+                    <li><a href="./paginasEmergentes/novedades.html">novedades</a></li>
+                </ul>
+        </nav>
+*/
