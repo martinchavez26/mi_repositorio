@@ -13,7 +13,7 @@
     grid-template-areas: "header" "main" "footer";
   }
   body button {
-    background-color: rgba(240, 248, 255, 0);
+    background-color: rgba(0, 0, 0, 0);
     border: 0px;
     cursor: pointer;
   }
@@ -40,10 +40,10 @@
     height: 70px;
   }
   .navbar-nav .nav-link {
-    color: white !important;
+    color: rgb(255, 255, 255) !important;
   }
   .navbar-brand {
-    color: white !important;
+    color: rgb(255, 255, 255) !important;
   }
   .navbar-collapse {
     background-image: url(./.././assetes/image/fondos/fondo-abstracto-textura.jpg);
@@ -273,6 +273,7 @@
   }
   footer h6, footer h5 {
     color: rgb(235, 255, 125);
+    font-size: 30px;
   }
   footer div ul li p, footer div ul li a {
     font-size: 12px;
@@ -288,24 +289,22 @@
   #redessociales {
     list-style: none;
     margin: 10px 10px 10px 10px;
-    padding: 0px 50px 0px 50px;
+    padding-left: 30%;
+    padding-bottom: 50px;
   }
   #contacto {
     list-style: none;
-    font: 250px;
     margin: 10px 10px 10px 10px;
   }
   #finaldelfooter {
     color: aliceblue;
     position: relative;
     font-size: 11px;
-    padding-left: 45%;
+    margin-left: 47%;
   }
   #botondelfooter {
     position: relative;
     width: 10px;
-    padding-left: 50%;
+    margin-left: 50%;
   }
-}
-
-/*# sourceMappingURL=sytle.css.map */
+}/*# sourceMappingURL=styles.css.map */
