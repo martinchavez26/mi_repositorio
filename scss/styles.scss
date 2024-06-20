@@ -45,6 +45,14 @@
         width: 129px;
         height: 70px; 
     }
+
+    .navbar-toggler-icon{
+
+        background-image: url(./../assetes/image/nav-logo.png);
+        width: 40px;
+        height: 40px;
+    }
+
     .navbar-nav .nav-link {
         color: rgb(255, 255, 255) !important;
     }
