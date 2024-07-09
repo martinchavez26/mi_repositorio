@@ -1,161 +1,175 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 @media (max-width: 768px) {
-  * {
+* {
     margin: 0;
     padding: 0;
     font-family: "nunitio", sans-serif;
     font-size: 20px;
-  }
-  body {
+}
+body {
     background-image: url(./../assetes/image/fondos/fondodelmain.jpg);
     grid-template-columns: 1fr;
     grid-template-rows: 10% 1fr 15%;
     grid-template-areas: "header" "main" "footer";
-  }
-  body button {
+}
+body button {
     background-color: rgba(0, 0, 0, 0);
     border: 0px;
     cursor: pointer;
-  }
-  body a {
+}
+body a {
     text-decoration: none;
-  }
-  header {
+}
+header {
     grid-area: header;
-  }
-  #navDestok {
+}
+#navDestok {
     display: none;
-  }
-  #navMobile {
+}
+#navMobile {
     background-image: url(./.././assetes/image/fondos/fondo-abstracto-textura.jpg);
     width: 99%;
     height: 90px;
     margin: 0px 2px 3px 2px;
-  }
-  #logodeboca {
+}
+#logodeboca {
     position: absolute;
     top: 10px;
     left: 14px;
     width: 129px;
     height: 70px;
-  }
-  .navbar-toggler-icon {
+}
+.navbar-toggler-icon {
     background-image: url(./../assetes/image/nav-logo.png);
     width: 40px;
     height: 40px;
-  }
-  .navbar-nav .nav-link {
+}
+.navbar-nav .nav-link {
     color: rgb(255, 255, 255) !important;
-  }
-  .navbar-brand {
+}
+.navbar-brand {
     color: rgb(255, 255, 255) !important;
-  }
-  .navbar-collapse {
+}
+.navbar-collapse {
     background-image: url(./.././assetes/image/fondos/fondo-abstracto-textura.jpg);
     padding: 1rem;
-  }
-  #navMobile ul li {
+}
+#navMobile ul li {
     text-align: right;
-  }
-  section {
-    background-image: url(./../assetes/image/fondos/fondo-abstracto-textura.jpg);
-    padding: 20px 20px 20px 20px;
-  }
-  main {
-    background-color: #f4f4f4;
-    padding: 20px 0px 20px 0px;
-    margin: 20px 10px 20px 10px;
-  }
-  article {
-    margin: 0px 5px 0px 5px;
-  }
-  article {
-    margin: 40px 5px 0px 5px;
-  }
-  .carousel-inner img {
-    max-height: 600px;
-  }
-  .imagenesArticulo {
+}
+
+main {
+    background-color: aliceblue;
+    padding: 60px 0px 20px 0px;
+    margin: 100px 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+}
+.audio-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.audio-player {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px 0;
     width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+main img{
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  footer {
+    width: 100%;
+}
+
+footer {
     grid-area: footer;
     background-image: url(./../assetes/image/fondos/fondo-abstracto-textura.jpg);
     position: relative;
     align-items: stretch;
-  }
-  footer h6, footer h5 {
+}
+footer h6, footer h5 {
     color: rgb(235, 255, 125);
-  }
-  footer div ul li p, footer div ul li a {
+}
+footer div ul li p, footer div ul li a {
     font-size: 15px;
     color: aliceblue;
-  }
-  #textodelfooter {
+}
+#textodelfooter {
     list-style: none;
     align-items: start;
-  }
-  #redessociales {
+}
+#redessociales {
     list-style: none;
     text-align: start;
     font: 200px;
     padding-top: 20px;
-  }
-  #contacto {
+}
+#contacto {
     list-style: none;
     font: 250px;
     text-align: start;
-  }
-  #finaldelfooter {
+}
+#finaldelfooter {
     color: aliceblue;
     position: relative;
     font-size: 11px;
     text-align: center;
-  }
-  #botondelfooter {
+}
+#botondelfooter {
     position: relative;
     width: 10px;
     padding-left: 45%;
-  }
 }
+}
+
 @media (min-width: 768px) {
-  * {
+* {
     margin: 0;
     padding: 0;
     font-family: "nunitio", sans-serif;
     font-size: 20px;
-  }
-  body {
+}
+body {
     background-image: url(./../assetes/image/fondos/fondodelmain.jpg);
     grid-template-columns: 1fr;
     grid-template-rows: 10% 1fr 15%;
     grid-template-areas: "header" "main" "footer";
-  }
-  body button {
+}
+body button {
     background-color: rgba(240, 248, 255, 0);
     border: 0px;
     cursor: pointer;
-  }
-  body a {
+}
+body a {
     text-decoration: none;
-  }
-  header {
+}
+header {
     grid-area: header;
-  }
-  #navMobile {
+    padding-top: 20px;
+}
+#navMobile {
     display: none;
-  }
-  #logodeboca {
+}
+#logodeboca {
     position: absolute;
     top: 10px;
     left: 14px;
     width: 129px;
     height: 70px;
-  }
-  nav {
+}
+nav {
     background-image: url(./.././assetes/image/fondos/fondo-abstracto-textura.jpg);
     width: 100%;
     height: 90px;
@@ -163,95 +177,101 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  #navDestok ul {
+    position: fixed;
+}
+#navDestok ul {
     list-style: none;
     display: flex;
-  }
-  #navDestok ul li {
+}
+#navDestok ul li {
     font-style: none;
     display: inline-block;
     padding: 10px;
     margin-top: 50px;
-  }
-  #navDestok ul li a {
+}
+#navDestok ul li a {
     color: rgb(255, 255, 255);
-  }
-  main h1 {
-    padding-top: 20px;
-  }
-  main h2 {
-    padding-bottom: 20px;
-  }
-  main {
-    background-color: #f4f4f4;
-    padding: 20px 0px 20px 0px;
-    margin: 20px 10px 20px 10px;
-  }
-  article {
-    margin: 0px 5px 0px 5px;
-  }
-  section {
-    background-image: url(./../assetes/image/fondos/fondo-abstracto-textura.jpg);
-    padding: 20px 20px 20px 20px;
-  }
-  .imagenesArticulo {
+}
+
+main {
+    background-color: aliceblue;
+    padding: 60px 0px 20px 0px;
+    margin: 100px 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+}
+
+.audio-section {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+
+.audio-player {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px 0;
     width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .carousel-inner img {
-    max-height: 600px;
-  }
-  section img {
+    max-width: 600px;
+    text-align: center;
+}
+
+audio {
     width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  footer {
+    margin-top: 10px;
+}
+main img{
+    height: 30%;
+    width: 30%;
+}
+
+
+footer {
     grid-area: footer;
     background-image: url(./../assetes/image/fondos/fondo-abstracto-textura.jpg);
     position: relative;
     display: flex;
     flex-flow: column;
     align-items: stretch;
-  }
-  footer h6, footer h5 {
+}
+footer h6, footer h5 {
     color: rgb(235, 255, 125);
     font-size: 30px;
-  }
-  footer div ul li p, footer div ul li a {
+}
+footer div ul li p, footer div ul li a {
     font-size: 12px;
     color: aliceblue;
-  }
-  #textodelfooter {
+}
+#textodelfooter {
     display: flex;
     flex-flow: row;
     list-style: none;
     padding: 10px 100px 10px 100px;
     align-items: center;
-  }
-  #redessociales {
+}
+#redessociales {
     list-style: none;
     margin: 10px 10px 10px 10px;
     padding-left: 30%;
     padding-bottom: 50px;
-  }
-  #contacto {
+}
+#contacto {
     list-style: none;
     margin: 10px 10px 10px 10px;
-  }
-  #finaldelfooter {
+}
+#finaldelfooter {
     color: aliceblue;
     position: relative;
     font-size: 11px;
     margin-left: 47%;
-  }
-  #botondelfooter {
+}
+#botondelfooter {
     position: relative;
     width: 10px;
     margin-left: 50%;
-  }
-}/*# sourceMappingURL=styles.css.map */
+}
+}

@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
+$background-color: #f4f4f4;
+
+@mixin imagenesFull {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
 @media (max-width: 768px){
     *{
         margin:0;
@@ -69,70 +77,30 @@
         text-align: right;
     }
     
-    main{
-        grid-area: main;
-        background-color: aliceblue;
-        width: 100%;
-        height: 100%;
-        padding: 10px;
-    }
-    main h1, main p{
-        background-color: aliceblue;
-        padding-top: 25px;
-    }
-
-    .imagenesArticulo{
-        width: 100%;
-        height: 100%;
-    }
-
     section{
-    color: rgb(0, 0, 0);
-    padding: 5px 5px 5px 5px;
-    }
-
-    section h1{
-    border-top: 2px solid  rgb(7, 27, 92);
-    }
-    section div {
-        margin: 5px 5px 0px 5px;
-        display: flex;
-        flex-flow: column;
-        align-items: stretch;
-        
-    }
-    .productosNovedosos{
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 100%;
-        grid-template-areas: "imagen informacion";
-    }
-    section ul{
-        display: flex;
-        flex-flow: row;
-        list-style: none;
-        width: 100%;
-        height: 100%;
-        border: 2px solid rgb(7, 27, 92);
+        background-image: url(./../assetes/image/fondos/fondo-abstracto-textura.jpg);
+        padding: 20px 20px 20px 20px;
     }
     
-    section ul li{
-        align-items: center;
-        width: 100%; 
-        height: 100%;
+    main {
+        background-color: $background-color;
+        padding: 20px 0px 20px 0px;
+        margin: 20px 10px 20px 10px;
+        }
+    
+    article {
+        margin: 0px 5px 0px 5px;
     }
     
-    section ul li p{
-        grid-area: informacion;
-        text-align: start;
-        width: 100%;
-        height: 100%;
-        padding: 0px 2px 0px 2px;
+    article {
+        margin: 40px 5px 0px 5px;
     }
-
-    .imagenesProductos{
-        grid-area: imagen;
-        width: 100%;
-        height: 100%;
+    
+    .carousel-inner img {
+        max-height: 600px;
+    }
+    .imagenesArticulo {
+        @include imagenesFull();
     }
 
     footer{
@@ -204,14 +172,18 @@ body{
     "footer";
 }
 
-body button{
-    background-color: rgba(240, 248, 255, 0);
+body { 
+    button{
+        background-color: rgba(240, 248, 255, 0);
     border: 0px;
     cursor: pointer;
+    }
 }
 
-body a{
-    text-decoration: none;
+body{
+    a{
+        text-decoration: none; 
+    }
 }
 
 header{
@@ -237,7 +209,6 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items:center ;
-    position: fixed;
 }
 
 
@@ -257,73 +228,35 @@ nav{
     color:rgb(255, 255, 255);
 }
 
-main{
-    background-color: aliceblue;
-    padding: 60px 0px 20px 0px;
-    position: static;
+main h1{
+    padding-top: 20px;
+}
+main h2{
+    padding-bottom: 20px;
+}
+
+main {
+    background-color: $background-color;
+    padding: 20px 0px 20px 0px;
     margin: 20px 10px 20px 10px;
+    }
 
+article {
+    margin: 0px 5px 0px 5px;
 }
-main h1, main p{
-    background-color: aliceblue;
-    padding-top: 25px;
-}
-
-article{
-    margin: 40px 5px 0px 5px;
-}
-
-.imagenesArticulo{
-    width: 100%;
-    height: 100%;
-}
-
 section{
-color: rgb(0, 0, 0);
-padding: 5px 5px 5px 5px;
+    background-image: url(./../assetes/image/fondos/fondo-abstracto-textura.jpg);
+    padding: 20px 20px 20px 20px;
 }
 
-section h1{
-    border-top: 2px solid  rgb(7, 27, 92);
+.imagenesArticulo {
+    @include imagenesFull();
 }
-section h1, section h2{
-    font-size: 30px;
+.carousel-inner img {
+    max-height: 600px;
 }
-
-section div {
-    margin: 5px 5px 0px 5px;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: stretch;
-}
-
-section ul{
-    
-    display: flex;
-    flex-flow: column;
-    list-style: none;
-    margin: 20px 5px 0px 5px;
-    width: 23%;
-    height: 100%;
-    border: 2px solid rgb(7, 27, 92);
-    
-}
-
-section ul li{
-    align-items: center;
-    width: 100%; 
-    height: 100%;
-}
-
-section ul li p{
-    width: 100%;
-    height: 100%;
-    padding: 0px 2px 0px 2px;
-}
-
-.imagenesProductos{
-    width: 100%;
-    height: 100%;
+section img{
+    @include imagenesFull;
 }
 
 footer {

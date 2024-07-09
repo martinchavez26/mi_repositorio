@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@media (max-width: 768px) {
+* {
+        margin: 0;
+        padding: 0;
+        font-family: "nunitio", sans-serif;
+        font-size: 20px;
+    }
+    body {
+        background-image: url(./../assetes/image/fondos/fondodelmain.jpg);
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 1fr 15%;
+        grid-template-areas: "header" "main" "footer";
+    }
+    body button {
+        background-color: rgba(0, 0, 0, 0);
+        border: 0px;
+        cursor: pointer;
+    }
+    body a {
+        text-decoration: none;
+    }
+    header {
+        grid-area: header;
+    }
+    #navDestok {
+        display: none;
+    }
+    #navMobile {
+        background-image: url(./.././assetes/image/fondos/fondo-abstracto-textura.jpg);
+        width: 99%;
+        height: 90px;
+        margin: 0px 2px 3px 2px;
+    }
+    #logodeboca {
+        position: absolute;
+        top: 10px;
+        left: 14px;
+        width: 129px;
+        height: 70px;
+    }
+    .navbar-toggler-icon {
+        background-image: url(./../assetes/image/nav-logo.png);
+        width: 40px;
+        height: 40px;
+    }
+    .navbar-nav .nav-link {
+        color: rgb(255, 255, 255) !important;
+    }
+    .navbar-brand {
+        color: rgb(255, 255, 255) !important;
+    }
+    .navbar-collapse {
+        background-image: url(./.././assetes/image/fondos/fondo-abstracto-textura.jpg);
+        padding: 1rem;
+    }
+    #navMobile ul li {
+        text-align: right;
+    }
+
+    main {
+        background-color: aliceblue;
+        padding: 60px 0px 20px 0px;
+        margin: 100px 10px 20px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 20px;
+    }
+
+    .ultimoPartido iframe {
+        height: 180px;
+    }
+
+    .listaDeVideos {
+        padding: 10px;
+    }
+
+    .listaDeVideos h2 {
+        font-size: 18px;
+    }
+
+    .listaDeVideos a {
+        font-size: 14px;
+    }
+
+    #youtube-video{
+        width: 100%;
+        height: 100%;
+    }
+
+    footer {
+        grid-area: footer;
+        background-image: url(./../assetes/image/fondos/fondo-abstracto-textura.jpg);
+        position: relative;
+        align-items: stretch;
+    }
+    footer h6, footer h5 {
+        color: rgb(235, 255, 125);
+    }
+    footer div ul li p, footer div ul li a {
+        font-size: 15px;
+        color: aliceblue;
+    }
+    #textodelfooter {
+        list-style: none;
+        align-items: start;
+    }
+    #redessociales {
+        list-style: none;
+        text-align: start;
+        font: 200px;
+        padding-top: 20px;
+    }
+    #contacto {
+        list-style: none;
+        font: 250px;
+        text-align: start;
+    }
+    #finaldelfooter {
+        color: aliceblue;
+        position: relative;
+        font-size: 11px;
+        text-align: center;
+    }
+    #botondelfooter {
+        position: relative;
+        width: 10px;
+        padding-left: 45%;
+    }
+    }
+    
+@media (min-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "nunitio", sans-serif;
+        font-size: 20px;
+    }
+    body {
+        background-image: url(./../assetes/image/fondos/fondodelmain.jpg);
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 1fr 15%;
+        grid-template-areas: "header" "main" "footer";
+    }
+    body button {
+        background-color: rgba(240, 248, 255, 0);
+        border: 0px;
+        cursor: pointer;
+    }
+    body a {
+        text-decoration: none;
+    }
+    header {
+        grid-area: header;
+        padding-top: 20px;
+    }
+    #navMobile {
+        display: none;
+    }
+    #logodeboca {
+        position: absolute;
+        top: 10px;
+        left: 14px;
+        width: 129px;
+        height: 70px;
+    }
+    nav {
+        background-image: url(./.././assetes/image/fondos/fondo-abstracto-textura.jpg);
+        width: 100%;
+        height: 90px;
+        margin: 0px 2px 3px 2px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+    }
+    #navDestok ul {
+        list-style: none;
+        display: flex;
+    }
+    #navDestok ul li {
+        font-style: none;
+        display: inline-block;
+        padding: 10px;
+        margin-top: 50px;
+    }
+    #navDestok ul li a {
+        color: rgb(255, 255, 255);
+    }
+
+    main {
+        background-color: aliceblue;
+        padding: 60px 0px 20px 0px;
+        margin: 100px 10px 20px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 20px;
+    }
+    
+    .ultimoPartido {
+        width: 100%;
+        max-width: 800px;
+        margin-bottom: 20px;
+    }
+    
+    .listaDeVideos {
+        width: 100%;
+        max-width: 800px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .listaDeVideos ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .listaDeVideos li {
+        margin-bottom: 10px;
+    }
+    
+    .listaDeVideos a {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+    }
+    
+    .listaDeVideos a:hover {
+        text-decoration: underline;
+    }
+
+    footer {
+        grid-area: footer;
+        background-image: url(./../assetes/image/fondos/fondo-abstracto-textura.jpg);
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        align-items: stretch;
+    }
+    footer h6, footer h5 {
+        color: rgb(235, 255, 125);
+        font-size: 30px;
+    }
+    footer div ul li p, footer div ul li a {
+        font-size: 12px;
+        color: aliceblue;
+    }
+    #textodelfooter {
+        display: flex;
+        flex-flow: row;
+        list-style: none;
+        padding: 10px 100px 10px 100px;
+        align-items: center;
+    }
+    #redessociales {
+        list-style: none;
+        margin: 10px 10px 10px 10px;
+        padding-left: 30%;
+        padding-bottom: 50px;
+    }
+    #contacto {
+        list-style: none;
+        margin: 10px 10px 10px 10px;
+    }
+    #finaldelfooter {
+        color: aliceblue;
+        position: relative;
+        font-size: 11px;
+        margin-left: 47%;
+    }
+    #botondelfooter {
+        position: relative;
+        width: 10px;
+        margin-left: 50%;
+    }
+    }
